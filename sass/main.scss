@@ -1,0 +1,679 @@
+@import "compass/css3";
+@import "./../../Cisco_Fonts/CiscoSans";
+@import "./AnimeAce";
+$sparkBlue: #1BA1D7;
+html, body {
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	font-family: "CiscoSans";
+	background-color: #4F5051;
+	min-width: 1360px;
+	min-height: 780px;
+}
+* {
+	outline: none;
+}
+h1, h2 {
+	font-weight: 300;
+}
+h1 {
+	font-size: 3rem;
+}
+button {
+	@include box-sizing(border-box);
+	width: 70%;
+  border-radius: 0;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  padding: 14px 50px;
+  background-color: $sparkBlue;
+  cursor: pointer;
+  display: block;
+  font-family: "CiscoSans";
+  font-weight: 100;
+}
+.page-container {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	overflow: hidden;
+	min-width: 1360px;
+	min-height: 780px;
+	display: inline-block;
+}
+
+.center {
+	position: absolute;
+	@include transform(translate(-50%, -50%));
+	left: 50%;
+	top: 50%;
+	text-align: center;
+}
+
+// .image-container {
+// 	// z-index: 2;
+// 	position: absolute;
+// 	width: 100%;
+// 	height: 100%;
+// 	background-color: white;
+// 	background-size: cover;
+// 	background-repeat: no-repeat;
+// 	overflow: hidden;
+// 	&:not(:first-child)  {
+// 		@include transform(translateX(100%));
+// 	}
+	
+// 	.clip-container {
+// 		position: absolute;
+// 		width: 100%;
+// 		height: 100%;
+// 		overflow: hidden;
+// 	}
+// 	.superhero {
+//     position: absolute;
+// 	  height: 206vh;
+// 	  top: 5vh;
+// 	  left: 50%;
+// 	  @include transform(translate(-50%, 0));
+// 	  &.Complete {
+// 	  	bottom: 3vh;
+// 	  }
+// 	}
+// }
+
+// .timer-progress {
+// 	width: 100%;
+// 	bottom:0;
+// 	position: absolute;
+// 	height: 5px;
+// 	background-color: $sparkBlue;
+// 	z-index:10;
+// }
+
+.dialogue {
+  font-family: "AnimeAce";
+  visibility: hidden;
+  position: absolute;
+  width: 22%;
+  padding-bottom: 13%;
+  font-weight: 300;
+  z-index: 3;
+  top: 7vh;
+  right: 27%;
+ 	&::before {
+ 		content: '';
+ 		background-image: url("./../img/dialogue-bubble.png");
+	  background-size: contain;
+	  background-repeat: no-repeat;
+	  background-position: center;
+	  position: absolute;
+	  width: 100%;
+	  height: 100%;
+	  display: block;
+ 	}
+ 	&.final {
+	  // @include transform(translate(42%, -255%));
+    left: 64%;
+  	top: -110%;
+ 	}
+  .text {
+  	font-size: 1.5vw;
+  	font-weight: 300;
+  	// position: relative;
+  	width: 70%;
+  	margin: 0;
+  	text-align: center;
+	  // padding: 0 12%;
+		box-sizing: border-box;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+.front-cover {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	background-image: url(./../img/front-cover.png);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 2;
+	.info-container {
+		background-color: transparent;
+	}
+}
+
+
+
+
+
+.comic-container {
+	position: absolute;
+  width: 70%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  &.heroes {
+  	z-index: 4;
+  }
+}
+
+.background-texture {
+	position: relative;
+	width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+.superhero {
+  // @include transform(translate(-50%, 0));
+  @include transform(translate(100%, 0));
+  position: absolute;
+  height: 206vh;
+  top: 5vh;
+  left: 50%;
+  &.Complete {
+  	bottom: 3vh;
+  }
+  &.Extraordinaire {
+  	height: 168vh;
+  }
+  &.Congrats {
+  	height: initial;
+  	width: 100%;
+  	top: 18vh;
+  }
+  &.Team {
+  	@include transform(translate(110%, 0));
+  	height: 155vh;
+  }
+}
+
+
+
+
+
+
+.profile-pic-container {
+  width: 14vw;
+  margin: auto;
+	div {
+		
+		color: #9B9B9B;
+		margin-top: -5vh;
+	}
+}
+.profile-pic {
+	@include transform(scale(0.6));
+	border-radius: 50%;
+	border: 1px solid #9B9B9B;
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+.super-visual {
+	// @include transform(translateX(100%));
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	z-index: 1;
+
+	.visible-window {
+		overflow: hidden;
+		position: relative;
+		width: 70%;
+		height: 100%;
+		z-index: 4;
+
+	}
+}
+.info-container {
+  position: absolute;
+  width: 30%;
+  height: 100%;
+  right: 0;
+  text-align: left;
+  background-color: white;
+  z-index: 2;
+  overflow: hidden;
+	.position-container {
+	  position: absolute;
+		width: 100%;
+  	top:30%;
+  	height: 70%;
+  	text-align: center;
+	}
+	.text {
+	  font-weight: 200;
+		font-size: 2vw;
+	  width: 80%;
+		display: block;
+		position: relative;
+		margin: auto;
+		margin-bottom: 15px;
+		white-space: pre;
+	}
+	button {
+	  @include transform(translateX(-50%));
+	  position: absolute;
+	  left: 50%;
+	  bottom: 100px;
+	}
+	input {
+	  @include transform(translateX(-50%));
+		position: absolute;
+		bottom: 175px;
+	}
+
+}
+
+
+
+
+
+
+
+.potential-teammates {
+	width: 70%;
+	margin: auto;
+	padding: 3vh 0;
+}
+
+.user-container {
+  display: inline-block;
+  text-align: center;
+  font-weight: 300;
+  cursor: pointer;
+  width: 4vw;
+  font-size: 0.8vw;
+  margin: 0.5vh 1vw;
+	img {
+		width: 100%;
+	}
+	.icon-add {
+		$grey: #9B9B9B;
+		@include display-flex;
+		@include box-sizing(border-box);
+		@include justify-content(center);
+		@include align-items(center);
+	  width: 4vw;
+	  height: 4vw;
+	  border: 1px solid $grey;
+	  border-radius: 50%;
+	  font-size: 2vw;
+	  top: -5px;
+	  color: $grey;
+	}
+}
+
+
+
+
+
+
+.finalstatement-container {
+  @include transform(translate(-50%, -50%));
+  position: absolute;
+  left: 50%;
+  top: 70%;
+	color: white;
+	opacity: 0;
+	white-space: nowrap;
+	div {
+	  display: inline-block;
+	  font-size: 2vw;
+	  font-weight: 200;
+	  margin: 0 4vw;
+	}
+}
+
+.fly-guy-container {
+  position: absolute;
+  width: 80vw;
+  top: 70%;
+  left: 11%;
+}
+
+.flying-guy {
+  // @include transform(translate(-32%, -90%));
+	position: relative;
+  width: 35vw;
+  left: 50%;
+  top: 70%;
+  z-index: 4;
+}
+
+
+
+
+
+
+// .input-container {
+// 	position: relative;
+//   // background: rgba(255, 255, 255, 0.2);
+// 	overflow: hidden;
+// 	border: 2px solid $sparkBlue;
+// 	border-radius: 5px;
+// 	width: 80%;
+// 	margin: auto;
+// 	margin-top: 30px;
+	
+// 	i {
+// 		position: absolute;
+// 	  top: 50%;
+// 	  color: $sparkBlue;
+// 	  font-size: 30px;
+// 	  right: 6px;
+// 	  cursor: pointer;
+// 	  @include transform(translate(0, -50%));
+// 	}
+// }
+input {
+	@include input-placeholder {
+		font-weight: 100;
+		opacity: 0.3;
+	}
+	@include box-sizing(border-box);
+
+  border: none;
+  border-bottom: 1px solid #858688;
+  font-size: 1vw;
+  font-weight: 200;
+  color: #515253;
+  padding: 10px 20px;
+  width: 70%;
+  text-align: center;
+}
+.progress {
+	margin-top: 3px;
+	height: 5px;
+	width: 0;
+	background-color: rgba(255, 255, 255, 0.5);
+	z-index: 1;
+
+	&::before {
+		position: absolute;
+		content: '';
+		display: block;
+	  width: 100%;
+	  height: 5px;
+	  background: rgba(255, 255, 255, 0.2);
+	  z-index: 0;
+	}
+}
+
+.name-tag {
+	// @include transform(translateX(-100%));
+  display: inline-block;
+  $tan: #FFEFC1;
+  background-color: $tan;
+  padding: 20px 55px;
+  position: absolute;
+  font-family: "AnimeAce";
+  font-size: 1.5rem;
+  border: 4px solid black;
+  border-radius: 3px;
+  // border-left: none;
+  // top: 3%;
+  left: 50px;
+  bottom: 100px;
+  z-index: 5;
+  .text {
+  	visibility: hidden;
+  	opacity: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.sub-text {
+	position: relative;
+	margin: auto;
+	width: 80%;
+  font-size: 1.2rem;
+  font-weight: 200;
+  color: #4A4A4A;
+
+  white-space: pre-line;
+
+}
+.check-again {
+	font-weight: 300;
+  font-size: 1rem;
+  text-decoration: underline;
+  color: $sparkBlue;
+  // margin-top: 300px;
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  margin: auto;
+  width: 100%;
+  bottom: 6vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.show-password {
+	position: relative;
+	width: 80%;
+	margin: auto;
+	margin-top: 10px;
+	font-size: 1.3rem;
+	font-weight: 300;
+	
+	
+	
+}
+.checkbox-container {
+	position: relative;
+	width: 25px;
+  height: 25px;
+  vertical-align: middle;
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  padding: 0;
+  border-radius: 5px;
+  margin-right: 14px;
+  display: inline-block;
+  input[type="checkbox"]{
+  	opacity: 0;
+  	width: 100%;
+  	height: 100%;
+  	position: absolute;
+  	margin: 0;
+	  
+	}
+	#check {
+		position: absolute;
+		width: 100%;
+	}
+}
+
+iframe {
+  border: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.page {
+	position: absolute;
+	width: 100%;
+  height: 100%;
+	overflow: hidden;
+}
+
+// .page {
+// 	overflow: hidden;
+// 	display: flex;
+// 	position: absolute;
+// 	
+// 	
+// }
+// .welcome {
+// 	.image-container {
+// 		background-image: url('./../img/light-blue-bg.png');
+// 	}
+	
+// }
+
+// .more {
+// 	@include transform(translateX(100%));
+// 	.image-container {
+// 		background-image: url('./../img/orange-bg.png');
+		
+
+// 		// .superhero {
+// 		// 	left: initial;
+// 		// 	right: -5%;
+// 		// 	@include transform(none);
+// 		// }
+// 	}
+// }
+
+.create-team {
+	// @include transform(translateX(100%));
+	background-image: url('./../img/green-bg.png');
+	
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-repeat: no-repeat;
+	.center {
+		width: 60%;
+  	max-width: 700px;
+
+	}
+	// h1, h2 {
+	// 	color: white;
+	// 	font-weight: 200;
+	// 	margin: 0;
+	// 	margin-bottom: 50px;
+	// }
+	.input-container {
+		margin: 0;
+		width: 100%;
+		position: relative;
+	  background: rgba(255, 255, 255, 0.2);
+		overflow: hidden;
+		i {
+			position: absolute;
+		  top: 50%;
+		  color: white;
+		  font-size: 30px;
+		  right: 20px;
+		  cursor: pointer;
+		  @include transform(translate(0, -50%));
+		}
+		border: none;
+	}
+	input {
+		@include input-placeholder {
+			color: rgba(255, 255, 255, 0.3);
+		}
+		@include box-sizing(border-box);
+	  background: transparent;
+	  border: none;
+	  font-size: 35px;
+	  font-weight: 200;
+	  color: white;
+	  padding: 20px;
+	  padding-right: 70px;
+	  width: 100%;
+	}
+
+	.small-text {
+	  text-align: left;
+	  font-weight: 100;
+	  color: white;
+	  font-size: 0.9rem;
+	  padding: 5px 20px;
+	  display: inline-block;
+	  cursor: pointer;
+	  float: left;
+	  &.right {
+	  	float: right;
+	  }
+	  &.label {
+	  	width: 100%;
+	  }
+	}
+	.processing {
+		@include transform(translate(-50%, -50%) scale(0));
+	  width: 30%;
+	  position: absolute;
+	  left: 50%;
+	  top: 50%;
+	  // @include transform(translate(-50%, -50%));
+	  img {
+	  	width: 100%;
+	  }
+	}
+}
+
+.suggestion-container {
+	color: white;
+	font-size: 0.8rem;
+	text-align: left;
+	margin-top: 50px;
+	.title {
+		font-weight: 200;
+		opacity: 0.75;
+		margin-bottom: 15px;
+	}
+}
+
+
+.spark-app {
+	overflow: auto;
+	@include display-flex;
+	// img {
+	// 	width: 100%;
+	// }
+	.side {
+		height: 100%;
+	}
+}

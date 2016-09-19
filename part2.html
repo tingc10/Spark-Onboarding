@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<title>Spark | Confirm</title>
+<link href="./stylesheets/main.css" rel="stylesheet">
+<link href="./../Cisco-Assets/icomoon/style.css" rel="stylesheet">
+<script src="./../bower_components/angular/angular.min.js"></script>
+<script src="./../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js"></script>
+<script src="./../bower_components/greensock/src/minified/TweenMax.min.js"></script>
+<!-- PERSONAL JS -->
+<script type="text/javascript" src="./js/directives.js"></script>
+<script type="text/javascript" src="./js/app.js"></script>
+</head>
+<body ng-app="SparkOnboard">
+	<div class="page-container">
+		<div class="super-visual page" super-visual="part2"></div>
+		<div class="create-team page" create-team></div>
+		<div class="spark-app page" spark-app>
+			<img class="side" src="./img/team-side.png"></img>
+			<div class="room">
+				<img class="main" src="./img/room.png"></img>
+				<img class="tools" src="./img/tools.png"></img>
+				<img class="text-box" src="./img/text-box.png"></img>
+			</div>
+			<!-- <iframe src="./../spark-team"></iframe> -->
+		</div>
+		<div class="timer-progress" timer></div>
+	</div>
+</body>
+</html>

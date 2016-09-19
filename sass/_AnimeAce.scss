@@ -1,0 +1,27 @@
+@font-face {
+	font-family: 'AnimeAce';
+	src: url('./../fonts/ttf/regular.ttf');
+	src: url('./../fonts/ttf/regular.ttf') format('truetype'),
+	url('./../fonts/otf/regular.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'AnimeAce';
+	src: url('./../fonts/ttf/bold.ttf');
+	src: url('./../fonts/ttf/bold.ttf') format('truetype'),
+	url('./../fonts/otf/bold.otf') format('opentype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'AnimeAce';
+	src: url('./../fonts/ttf/italic.ttf');
+	src: url('./../fonts/ttf/italic.ttf') format('truetype'),
+	url('./../fonts/otf/italic.otf') format('opentype');
+	font-weight: normal;
+	font-style: italic;
+}
+

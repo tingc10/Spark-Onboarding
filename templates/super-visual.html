@@ -1,0 +1,61 @@
+<!-- <div class="visible-window">
+	<div class="image-container" ng-style="{'background-image': 'url('+page.background+')'}" image-container ng-repeat="page in pages track by $index"></div>
+
+</div> -->
+<div class="comic-container" animate="background">
+	<div class="background-texture" ng-style="{'background-image': 'url('+page.background+')'}" ng-repeat="page in pages track by $index"></div>
+</div>
+
+<div class="comic-container heroes">
+	<img class="superhero" ng-class="page.heroName" ng-src="{{page.imgSrc}}"  ng-repeat="page in pages track by $index" hero="{{page.heroName}}"></img>
+</div>
+
+<div class="name-tag" animate="tag">
+	<div class="text">{{heroName}}</div>
+</div>
+<div class="dialogue" animate="dialogue">
+	<h2 class="text center">{{dialogue}}</h2>
+</div>
+<div class="info-container">
+	<div class="position-container">
+		<div class="text">{{sidePanelMessage}}</div>
+		<div class="sub-text" ng-show="heroName == 'Ms Extraordinaire' || heroName == 'Team'">
+			{{subtext}}
+			
+		</div>
+		<div class="check-again" ng-show="heroName == 'Ms Extraordinaire'" ng-if="partOne" ng-click="openPartTwo()">
+			Resend</br/>
+			Use a different email
+		</div>
+		<!-- <div class="input-container" ng-show="showInput"> -->
+		
+		<div class="profile-pic-container" ng-if="!partOne" ng-hide="heroName == 'Team'">
+			<img class="profile-pic" src="./img/profile-pic.png"></img>
+
+			<div>Upload Photo</div>
+		</div>
+		<div class="potential-teammates" ng-if="!partOne" ng-show="subtext == 'Add Superheroes To Your Team'">
+			<div class="user-container" ng-repeat="user in users track by $index" user-container></div>
+			<div class="user-container">
+				<div class="icon-add"></div>
+				<div class="name">Invite</div>
+			</div>
+		</div>
+		<input ng-show="showInput" ng-hide="subtext == 'Add Superheroes To Your Team'" type="{{inputType}}" placeholder="{{placeholder}}" validate-email ng-model='inputValue'></input>
+			<!-- <i class="icon-right-arrow" ng-click="nextInput()"></i> -->
+		<!-- </div> -->
+		<!-- <div class="show-password" ng-if="!partOne" ng-show="showInput">
+			<div class="checkbox-container">
+				
+				<svg version="1.1" id="check" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="-281 373 48 48">
+				<path id="check-stroke" fill="none" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" d="M-273.2,398.2l10,9.9
+					l22.4-22.3"/>
+				</svg>
+				<input class="icon-" type="checkbox" id="password" ng-click="toggleInputType()">
+			</div>
+			<label for="password">Show Password</label>
+		</div> -->
+		<!-- <button ng-if="!partOne" ng-show="heroName == 'Ms Multi-task'" ng-click="setupPassword()">Next</button> -->
+		<button ng-show="showInput" ng-click="nextInput()">{{buttonTitle}}</button>
+	</div>
+</div>

@@ -1,0 +1,712 @@
+@font-face {
+  font-family: 'CiscoSans';
+  src: url("./../../Cisco_Fonts/CiscoSans TTF/CiscoSansTTThin.ttf");
+  src: url("./../../Cisco_Fonts/CiscoSans TTF/CiscoSansTTThin.ttf") format("truetype"), url("./../../Cisco_Fonts/CiscoSans OTF/CiscoSansThin.otf") format("opentype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'CiscoSans';
+  src: url("./../../Cisco_Fonts/CiscoSans TTF/CiscoSansTTExtraLight.ttf");
+  src: url("./../../Cisco_Fonts/CiscoSans TTF/CiscoSansTTExtraLight.ttf") format("truetype"), url("./../../Cisco_Fonts/CiscoSans OTF/CiscoSansExtraLight.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'CiscoSans';
+  src: url("./../../Cisco_Fonts/CiscoSans TTF/CiscoSansTTRegular.ttf");
+  src: url("./../../Cisco_Fonts/CiscoSans TTF/CiscoSansTTRegular.ttf") format("truetype"), url("./../../Cisco_Fonts/CiscoSans OTF/CiscoSansRegular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'CiscoSans';
+  src: url("./../../Cisco_Fonts/CiscoSans TTF/CiscoSansTTBold.ttf");
+  src: url("./../../Cisco_Fonts/CiscoSans TTF/CiscoSansTTBold.ttf") format("truetype"), url("./../../Cisco_Fonts/CiscoSans OTF/CiscoSansBold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'CiscoSans';
+  src: url("./../../Cisco_Fonts/CiscoSans TTF/CiscoSansTTHeavy.ttf");
+  src: url("/./../../Cisco_Fonts/CiscoSans TTF/CiscoSansTTHeavy.ttf") format("truetype"), url("./../../Cisco_Fonts/CiscoSans OTF/CiscoSansHeavy.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'CiscoSans';
+  src: url("./../../Cisco_Fonts/CiscoSans TTF/CiscoSansTTThinOblique.ttf");
+  src: url("./../../Cisco_Fonts/CiscoSans TTF/CiscoSansTTThinOblique.ttf") format("truetype"), url("./../../Cisco_Fonts/CiscoSans OTF/CiscoSansThinOblique.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'CiscoSans';
+  src: url("./../../Cisco_Fonts/CiscoSans TTF/CiscoSansTTExtraLightOblique.ttf");
+  src: url("./../../Cisco_Fonts/CiscoSans TTF/CiscoSansTTExtraLightOblique.ttf") format("truetype"), url("./../../Cisco_Fonts/CiscoSans OTF/CiscoSansExtraLightOblique.otf") format("opentype");
+  font-weight: thin;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'CiscoSans';
+  src: url("./../../Cisco_Fonts/CiscoSans TTF/CiscoSansTTRegularOblique.ttf");
+  src: url("./../../Cisco_Fonts/CiscoSans TTF/CiscoSansTTRegularOblique.ttf") format("truetype"), url("./../../Cisco_Fonts/CiscoSans OTF/CiscoSansRegularOblique.otf") format("opentype");
+  font-weight: italic;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'CiscoSans';
+  src: url("./../../Cisco_Fonts/CiscoSans TTF/CiscoSansTTBoldOblique.ttf");
+  src: url("./../../Cisco_Fonts/CiscoSans TTF/CiscoSansTTBoldOblique.ttf") format("truetype"), url("./../../Cisco_Fonts/CiscoSans OTF/CiscoSansBoldOblique.otf") format("opentype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'CiscoSans';
+  src: url("./../../Cisco_Fonts/CiscoSans TTF/CiscoSansTTHeavyOblique.ttf");
+  src: url("/./../../Cisco_Fonts/CiscoSans TTF/CiscoSansTTHeavyOblique.ttf") format("truetype"), url("./../../Cisco_Fonts/CiscoSans OTF/CiscoSansHeavyOblique.otf") format("opentype");
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'AnimeAce';
+  src: url("./../fonts/ttf/regular.ttf");
+  src: url("./../fonts/ttf/regular.ttf") format("truetype"), url("./../fonts/otf/regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'AnimeAce';
+  src: url("./../fonts/ttf/bold.ttf");
+  src: url("./../fonts/ttf/bold.ttf") format("truetype"), url("./../fonts/otf/bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'AnimeAce';
+  src: url("./../fonts/ttf/italic.ttf");
+  src: url("./../fonts/ttf/italic.ttf") format("truetype"), url("./../fonts/otf/italic.otf") format("opentype");
+  font-weight: normal;
+  font-style: italic;
+}
+/* line 5, ../sass/main.scss */
+html, body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "CiscoSans";
+  background-color: #4F5051;
+  min-width: 1360px;
+  min-height: 780px;
+}
+
+/* line 14, ../sass/main.scss */
+* {
+  outline: none;
+}
+
+/* line 17, ../sass/main.scss */
+h1, h2 {
+  font-weight: 300;
+}
+
+/* line 20, ../sass/main.scss */
+h1 {
+  font-size: 3rem;
+}
+
+/* line 23, ../sass/main.scss */
+button {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 70%;
+  border-radius: 0;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  padding: 14px 50px;
+  background-color: #1BA1D7;
+  cursor: pointer;
+  display: block;
+  font-family: "CiscoSans";
+  font-weight: 100;
+}
+
+/* line 38, ../sass/main.scss */
+.page-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  min-width: 1360px;
+  min-height: 780px;
+  display: inline-block;
+}
+
+/* line 48, ../sass/main.scss */
+.center {
+  position: absolute;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  text-align: center;
+}
+
+/* line 96, ../sass/main.scss */
+.dialogue {
+  font-family: "AnimeAce";
+  visibility: hidden;
+  position: absolute;
+  width: 22%;
+  padding-bottom: 13%;
+  font-weight: 300;
+  z-index: 3;
+  top: 7vh;
+  right: 27%;
+}
+/* line 106, ../sass/main.scss */
+.dialogue::before {
+  content: '';
+  background-image: url("./../img/dialogue-bubble.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+/* line 117, ../sass/main.scss */
+.dialogue.final {
+  left: 64%;
+  top: -110%;
+}
+/* line 122, ../sass/main.scss */
+.dialogue .text {
+  font-size: 1.5vw;
+  font-weight: 300;
+  width: 70%;
+  margin: 0;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* line 143, ../sass/main.scss */
+.front-cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  background-image: url(./../img/front-cover.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+/* line 153, ../sass/main.scss */
+.front-cover .info-container {
+  background-color: transparent;
+}
+
+/* line 162, ../sass/main.scss */
+.comic-container {
+  position: absolute;
+  width: 70%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+}
+/* line 169, ../sass/main.scss */
+.comic-container.heroes {
+  z-index: 4;
+}
+
+/* line 174, ../sass/main.scss */
+.background-texture {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+/* line 183, ../sass/main.scss */
+.superhero {
+  -moz-transform: translate(100%, 0);
+  -ms-transform: translate(100%, 0);
+  -webkit-transform: translate(100%, 0);
+  transform: translate(100%, 0);
+  position: absolute;
+  height: 206vh;
+  top: 5vh;
+  left: 50%;
+}
+/* line 190, ../sass/main.scss */
+.superhero.Complete {
+  bottom: 3vh;
+}
+/* line 193, ../sass/main.scss */
+.superhero.Extraordinaire {
+  height: 168vh;
+}
+/* line 196, ../sass/main.scss */
+.superhero.Congrats {
+  height: initial;
+  width: 100%;
+  top: 18vh;
+}
+/* line 201, ../sass/main.scss */
+.superhero.Team {
+  -moz-transform: translate(110%, 0);
+  -ms-transform: translate(110%, 0);
+  -webkit-transform: translate(110%, 0);
+  transform: translate(110%, 0);
+  height: 155vh;
+}
+
+/* line 212, ../sass/main.scss */
+.profile-pic-container {
+  width: 14vw;
+  margin: auto;
+}
+/* line 215, ../sass/main.scss */
+.profile-pic-container div {
+  color: #9B9B9B;
+  margin-top: -5vh;
+}
+
+/* line 221, ../sass/main.scss */
+.profile-pic {
+  -moz-transform: scale(0.6);
+  -ms-transform: scale(0.6);
+  -webkit-transform: scale(0.6);
+  transform: scale(0.6);
+  border-radius: 50%;
+  border: 1px solid #9B9B9B;
+  width: 100%;
+}
+
+/* line 235, ../sass/main.scss */
+.super-visual {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  z-index: 1;
+}
+/* line 244, ../sass/main.scss */
+.super-visual .visible-window {
+  overflow: hidden;
+  position: relative;
+  width: 70%;
+  height: 100%;
+  z-index: 4;
+}
+
+/* line 253, ../sass/main.scss */
+.info-container {
+  position: absolute;
+  width: 30%;
+  height: 100%;
+  right: 0;
+  text-align: left;
+  background-color: white;
+  z-index: 2;
+  overflow: hidden;
+}
+/* line 262, ../sass/main.scss */
+.info-container .position-container {
+  position: absolute;
+  width: 100%;
+  top: 30%;
+  height: 70%;
+  text-align: center;
+}
+/* line 269, ../sass/main.scss */
+.info-container .text {
+  font-weight: 200;
+  font-size: 2vw;
+  width: 80%;
+  display: block;
+  position: relative;
+  margin: auto;
+  margin-bottom: 15px;
+  white-space: pre;
+}
+/* line 279, ../sass/main.scss */
+.info-container button {
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+  bottom: 100px;
+}
+/* line 285, ../sass/main.scss */
+.info-container input {
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  position: absolute;
+  bottom: 175px;
+}
+
+/* line 299, ../sass/main.scss */
+.potential-teammates {
+  width: 70%;
+  margin: auto;
+  padding: 3vh 0;
+}
+
+/* line 305, ../sass/main.scss */
+.user-container {
+  display: inline-block;
+  text-align: center;
+  font-weight: 300;
+  cursor: pointer;
+  width: 4vw;
+  font-size: 0.8vw;
+  margin: 0.5vh 1vw;
+}
+/* line 313, ../sass/main.scss */
+.user-container img {
+  width: 100%;
+}
+/* line 316, ../sass/main.scss */
+.user-container .icon-add {
+  display: -webkit-flex;
+  display: flex;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  width: 4vw;
+  height: 4vw;
+  border: 1px solid #9B9B9B;
+  border-radius: 50%;
+  font-size: 2vw;
+  top: -5px;
+  color: #9B9B9B;
+}
+
+/* line 337, ../sass/main.scss */
+.finalstatement-container {
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  color: white;
+  opacity: 0;
+  white-space: nowrap;
+}
+/* line 345, ../sass/main.scss */
+.finalstatement-container div {
+  display: inline-block;
+  font-size: 2vw;
+  font-weight: 200;
+  margin: 0 4vw;
+}
+
+/* line 353, ../sass/main.scss */
+.fly-guy-container {
+  position: absolute;
+  width: 80vw;
+  top: 70%;
+  left: 11%;
+}
+
+/* line 360, ../sass/main.scss */
+.flying-guy {
+  position: relative;
+  width: 35vw;
+  left: 50%;
+  top: 70%;
+  z-index: 4;
+}
+
+/* line 394, ../sass/main.scss */
+input {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #858688;
+  font-size: 1vw;
+  font-weight: 200;
+  color: #515253;
+  padding: 10px 20px;
+  width: 70%;
+  text-align: center;
+}
+/* line 61, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+input:-moz-placeholder {
+  font-weight: 100;
+  opacity: 0.3;
+}
+/* line 64, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+input::-moz-placeholder {
+  font-weight: 100;
+  opacity: 0.3;
+}
+/* line 67, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+input:-ms-input-placeholder {
+  font-weight: 100;
+  opacity: 0.3;
+}
+/* line 56, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+input::-webkit-input-placeholder {
+  font-weight: 100;
+  opacity: 0.3;
+}
+
+/* line 410, ../sass/main.scss */
+.progress {
+  margin-top: 3px;
+  height: 5px;
+  width: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 1;
+}
+/* line 417, ../sass/main.scss */
+.progress::before {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  z-index: 0;
+}
+
+/* line 428, ../sass/main.scss */
+.name-tag {
+  display: inline-block;
+  background-color: #FFEFC1;
+  padding: 20px 55px;
+  position: absolute;
+  font-family: "AnimeAce";
+  font-size: 1.5rem;
+  border: 4px solid black;
+  border-radius: 3px;
+  left: 50px;
+  bottom: 100px;
+  z-index: 5;
+}
+/* line 444, ../sass/main.scss */
+.name-tag .text {
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* line 461, ../sass/main.scss */
+.sub-text {
+  position: relative;
+  margin: auto;
+  width: 80%;
+  font-size: 1.2rem;
+  font-weight: 200;
+  color: #4A4A4A;
+  white-space: pre-line;
+}
+
+/* line 472, ../sass/main.scss */
+.check-again {
+  font-weight: 300;
+  font-size: 1rem;
+  text-decoration: underline;
+  color: #1BA1D7;
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  margin: auto;
+  width: 100%;
+  bottom: 6vh;
+}
+
+/* line 501, ../sass/main.scss */
+.show-password {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  margin-top: 10px;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+/* line 512, ../sass/main.scss */
+.checkbox-container {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  padding: 0;
+  border-radius: 5px;
+  margin-right: 14px;
+  display: inline-block;
+}
+/* line 522, ../sass/main.scss */
+.checkbox-container input[type="checkbox"] {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0;
+}
+/* line 530, ../sass/main.scss */
+.checkbox-container #check {
+  position: absolute;
+  width: 100%;
+}
+
+/* line 536, ../sass/main.scss */
+iframe {
+  border: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+/* line 543, ../sass/main.scss */
+.page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* line 578, ../sass/main.scss */
+.create-team {
+  background-image: url("./../img/green-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* line 585, ../sass/main.scss */
+.create-team .center {
+  width: 60%;
+  max-width: 700px;
+}
+/* line 596, ../sass/main.scss */
+.create-team .input-container {
+  margin: 0;
+  width: 100%;
+  position: relative;
+  background: rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+  border: none;
+}
+/* line 602, ../sass/main.scss */
+.create-team .input-container i {
+  position: absolute;
+  top: 50%;
+  color: white;
+  font-size: 30px;
+  right: 20px;
+  cursor: pointer;
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+/* line 613, ../sass/main.scss */
+.create-team input {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background: transparent;
+  border: none;
+  font-size: 35px;
+  font-weight: 200;
+  color: white;
+  padding: 20px;
+  padding-right: 70px;
+  width: 100%;
+}
+/* line 61, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+.create-team input:-moz-placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+/* line 64, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+.create-team input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+/* line 67, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+.create-team input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+/* line 56, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+.create-team input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+/* line 628, ../sass/main.scss */
+.create-team .small-text {
+  text-align: left;
+  font-weight: 100;
+  color: white;
+  font-size: 0.9rem;
+  padding: 5px 20px;
+  display: inline-block;
+  cursor: pointer;
+  float: left;
+}
+/* line 637, ../sass/main.scss */
+.create-team .small-text.right {
+  float: right;
+}
+/* line 640, ../sass/main.scss */
+.create-team .small-text.label {
+  width: 100%;
+}
+/* line 644, ../sass/main.scss */
+.create-team .processing {
+  -moz-transform: translate(-50%, -50%) scale(0);
+  -ms-transform: translate(-50%, -50%) scale(0);
+  -webkit-transform: translate(-50%, -50%) scale(0);
+  transform: translate(-50%, -50%) scale(0);
+  width: 30%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+/* line 651, ../sass/main.scss */
+.create-team .processing img {
+  width: 100%;
+}
+
+/* line 657, ../sass/main.scss */
+.suggestion-container {
+  color: white;
+  font-size: 0.8rem;
+  text-align: left;
+  margin-top: 50px;
+}
+/* line 662, ../sass/main.scss */
+.suggestion-container .title {
+  font-weight: 200;
+  opacity: 0.75;
+  margin-bottom: 15px;
+}
+
+/* line 670, ../sass/main.scss */
+.spark-app {
+  overflow: auto;
+  display: -webkit-flex;
+  display: flex;
+}
